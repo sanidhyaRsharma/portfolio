@@ -1,5 +1,5 @@
-'use client'
-import {Accordion, AccordionItem} from "@nextui-org/accordion"
+"use client";
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
 
 export default function WorkExp() {
   const workexList = [
@@ -44,20 +44,27 @@ export default function WorkExp() {
 
   const listItems = workexList.map((item) => (
     // <li key={item.id} className="w-full group">
-    <AccordionItem key={item.id} className="w-full m-2 bg-gray-900 rounded-2xl p-4" style={{'&focus':{outline:'0'}}} aria-label={item.title} title={
-      <div className="w-full lg:flex lg:justify-between">
-        <div className="my-2 text-2xl px-4">{item.title}</div>
-        <div className="my-2 md:text-2xl px-4">{item.duration}</div>
-      </div>
-    } 
-    indicator={<></>}
+    <AccordionItem
+      key={item.id}
+      className="m-2 bg-gray-900 rounded-2xl p-4"
+      style={{ "&focus": { outline: "0" } }}
+      aria-label={item.title}
+      title={
+        <div className="w-full lg:flex lg:justify-between">
+          <div className="my-2 text-2xl px-4">{item.title}</div>
+          <div className="my-2 md:text-2xl px-4">{item.duration}</div>
+        </div>
+      }
+      indicator={<></>}
     >
       <div className="px-8">
         <div className="text-xl ">{item.company}</div>
         <div className="italic ">{item.location}</div>
         <ul className="my-2 list-disc">
           {item.description.map((d, index) => (
-            <li key={index} className="list-disc list-inside">{d}</li>
+            <li key={index} className="list-disc list-inside">
+              {d}
+            </li>
           ))}
         </ul>
       </div>
@@ -65,12 +72,20 @@ export default function WorkExp() {
   ));
 
   return (
-    <div id="workexp" className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl">
+    <div
+      id="workexp"
+      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl"
+    >
       <div className="text-4xl text-white p-4"> Experience </div>
       <hr />
-      <div className="">
-        <Accordion selectionMode="multiple" className="p-2 m-2 flex flex-wrap" variant="splitted">{listItems}</Accordion>
-      </div>
+     <br />
+      <Accordion
+        selectionMode="multiple"
+        className="p-0 m-0"
+        variant="splitted"
+      >
+        {listItems}
+      </Accordion>
     </div>
   );
 }
