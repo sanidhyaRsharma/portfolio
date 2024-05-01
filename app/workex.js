@@ -56,8 +56,8 @@ export default function WorkExp() {
         <div className="text-xl ">{item.company}</div>
         <div className="italic ">{item.location}</div>
         <ul className="my-2 list-disc">
-          {item.description.map((d) => (
-            <li className="list-disc list-inside">{d}</li>
+          {item.description.map((d, index) => (
+            <li key={index} className="list-disc list-inside">{d}</li>
           ))}
         </ul>
       </div>

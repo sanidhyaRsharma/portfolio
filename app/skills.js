@@ -1,17 +1,17 @@
 export default function Skills() {
   const skills = [
-    { name: "Java", value: 98 },
-    { name: "Spring Boot", value: 95 },
-    { name: "Python", value: 90 },
-    { name: "Android", value: 85 },
-    { name: "SQL", value: 95 },
-    { name: "React", value: 75 },
-    { name: "Git", value: 95 },
-    { name: "CI/CD", value: 85 },
-    { name: "Apache Spark", value: 80}
+    { id:0, name: "Java", value: 98 },
+    { id:1, name: "Spring Boot", value: 95 },
+    { id:2, name: "Python", value: 90 },
+    { id:3, name: "Android", value: 85 },
+    { id:4, name: "SQL", value: 95 },
+    { id:5, name: "React", value: 75 },
+    { id:6, name: "Git", value: 95 },
+    { id:7, name: "CI/CD", value: 85 },
+    { id:8, name: "Apache Spark", value: 80}
   ];
   const listItems = skills.map((item) => (
-    <li className="w-full lg:w-1/3  p-5 ">
+    <li key={item.id} className="w-full lg:w-1/3 p-5">
       <div className="relative">
         <div className="py-2">{item.name}</div>
         <div className="absolute top-2 right-0">{item.value}%</div>
