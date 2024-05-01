@@ -13,7 +13,7 @@ export default function Home() {
   
   const [isOpen, setIsOpen] = useState(true);
   const bgStyle = {
-    backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/assets/package.jpeg') "
+    backgroundImage:"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/portfolio/img/assets/package.jpeg') "
   };
   const handleClick = () => {
     setIsOpen(!isOpen);
