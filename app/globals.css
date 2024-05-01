@@ -31,3 +31,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  button:focus {
+    outline: 0;
+  }
+}
