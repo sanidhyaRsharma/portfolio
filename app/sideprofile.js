@@ -8,6 +8,7 @@ export default function SideBarProfile() {
             width = {200}
             height = {200}
             alt = "Profile picture"
+            unoptimized
             ></Image>
         </div>
     );
