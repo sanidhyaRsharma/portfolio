@@ -25,16 +25,6 @@ export default function Projects() {
       <ProjectItem title={item.title} link={item.link} desc={item.desc} />
     </li>
   ));
-  // const projectItems = [<ProjectItem title = {'PFW Chatbot'}
-  //                             link = {'https://github.com/StaticOwl/PFW_ChatBot'}
-  //                             desc = {''}/>,
-  //                 <ProjectItem title = {''}
-  //                         link = {''}
-  //                         desc = {''}/>,
-  //                 <ProjectItem title = {'Enthusia App'}
-  //                         link = {''}
-  //                         desc = {''}/>
-  //                     ];
 
   return (
     <div
