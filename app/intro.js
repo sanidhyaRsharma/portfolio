@@ -5,7 +5,7 @@ export default function Intro() {
       <hr />
       <div className="shadow-md shadow-gray-500 p-8 m-4  bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl ">
         <h1 className="text-xl m-4">
-          Hi! I am a <strong>backend developer</strong> and a <strong>research enthusiast</strong>.
+          Hi! I am a <strong>Backend Developer</strong> and a <strong>Research Enthusiast</strong>.
           </h1>
         <h1 className="text-md m-4"> 
           I am actively looking for Full Time Opportunities. I am adept at Java Spring Boot and Deep
