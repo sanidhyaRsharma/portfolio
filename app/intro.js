@@ -14,7 +14,7 @@ export default function Intro() {
         </h1>
 
         <h1 className="text-md m-4">
-          I am a big fan of Chess and Dota 2! Shoot me a message if you'd like
+          I am a big fan of Chess and Dota 2! Shoot me a message if you would like
           to play a game!
         </h1>
       </div>
