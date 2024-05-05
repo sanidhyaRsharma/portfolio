@@ -41,21 +41,22 @@ export default function Projects() {
 }
 
 const ProjectItem = ({ title, link, desc }) => (
-  <div className="border border-gray-400 m-4 align-center shadow-white shadow-sm">
-    <div className="text-3xl p-2 bg-gray-950 bg-opacity-20 text-center">
+  <div className="bg-gray-600 border border-gray-400 m-4 align-center shadow-white shadow-sm min-h-72">
+    <div className="text-2xl p-1 px-2 bg-gray-950 bg-opacity-60 text-center max-h-32">
       <a href={link} className="p-2">
-        <div className="flex items-center">
-            <div className="flex-grow">
+        <div className="flex items-center justify-center">
+            {/* <div className="items-center align-middle p-4">
+            </div> */}
+            {/* <div className=""> */}
+                <FaGithub className="flex mr-3" size={32}></FaGithub>
                 {title}
-            </div>
-            <div className="items-center align-middle p-2">
-                <FaGithub size={32}></FaGithub>
-            </div>
+            {/* </div> */}
+                
         </div>
       </a>
     </div>
 
     <div className="h-0.5 mx-auto bg-slate-50" />
-    <div className="p-4 bg-gray-600">{desc}</div>
+    <div className="p-4 bg-gray-600 text-center">{desc}</div>
   </div>
 );

@@ -24,8 +24,9 @@ export default function Home() {
       <SideBar handleClick={handleClick} isOpen={isOpen}/>
       <div className="p-8 flex-1">
         <div>
+        <div className="fixed flex top-0 left-0 p-3 m-4 rounded-full bg-slate-400 bg-opacity-60 w-16 h-16 justify-center align-middle"><button onClick={handleClick}><GiHamburgerMenu size={36} /></button></div>
+
           <div className="flex">
-          <div className="fixed top-0 left-0 p-4 m-4"><button onClick={handleClick}><GiHamburgerMenu size={36} /></button></div>
           <Intro/>  
           </div>
           <Projects />
