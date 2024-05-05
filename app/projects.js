@@ -42,18 +42,20 @@ export default function Projects() {
 
 const ProjectItem = ({ title, link, desc }) => (
   <div className="border border-gray-400 m-4 align-center shadow-white shadow-sm">
-    <div className="text-xl p-2 bg-gray-950 bg-opacity-20 text-center  ">
+    <div className="text-3xl p-2 bg-gray-950 bg-opacity-20 text-center">
       <a href={link} className="p-2">
-        <div className="relative">
-          {title}
-          <div className="absolute right-0 top-0 px-2 invisible lg:visible">
-            <FaGithub size={28}></FaGithub>
-          </div>
+        <div className="flex items-center">
+            <div className="flex-grow">
+                {title}
+            </div>
+            <div className="items-center align-middle p-2">
+                <FaGithub size={32}></FaGithub>
+            </div>
         </div>
       </a>
     </div>
 
     <div className="h-0.5 mx-auto bg-slate-50" />
-    <div className="text-sm p-4 bg-gray-600">{desc}</div>
+    <div className="p-4 bg-gray-600">{desc}</div>
   </div>
 );

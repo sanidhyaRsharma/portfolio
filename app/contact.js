@@ -9,14 +9,14 @@ export default function Contact() {
             </div>
             <hr></hr>
             <div className="w-10"></div>
-            <div className='my-4'>
-                <MdMail size={28} className="inline mx-2"/> sanidhyarsharma@gmail.com
+            <div className='my-4 flex'>
+                <MdMail size={28} className="inline mx-2"/> <a className="flex-grow" href="mailto:sanidhyrsharma@gmail.com" >sanidhyarsharma@gmail.com</a>
             </div>
-            <div className='my-4'>
-                <FaGithub size = {28} className = "inline mx-2" /> <a href="github.com/sanidhyaRsharma"> github.com/sanidhyaRsharma</a>
+            <div className='my-4 flex'>
+                <FaGithub size = {28} className = "inline mx-2" /> <a className="flex-grow" href="github.com/sanidhyaRsharma"> github.com/sanidhyaRsharma</a>
             </div>
-            <div className='my-4'>
-                < TfiLocationPin size = {28} className="inline mx-2"/> Fort Wayne, Indiana
+            <div className='my-4 flex'>
+                < TfiLocationPin size = {28} className="inline mx-2"/> <div className="flex-grow">Fort Wayne, Indiana</div>
             </div>
         </div>
     );
