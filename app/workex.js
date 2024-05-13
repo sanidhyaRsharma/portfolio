@@ -72,7 +72,7 @@ export default function WorkExp() {
       <div className="px-4">
         <div className="flex justify-between">
           <div className="my-2 md:text-2xl">{item.duration}</div>
-          <div className="md:text-2xl ">{item.company}</div>
+          <div className="my-2 md:text-2xl ">{item.company}</div>
         </div>
         <div className="italic ">{item.location}</div>
         <ul className="my-2 list-disc">

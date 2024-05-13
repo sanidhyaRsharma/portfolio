@@ -6,6 +6,7 @@ import Contact from "./contact.js"
 import Intro from "./intro.js"
 import Skills from "./skills.js"
 import WorkExp from "./workex.js"
+import Education from "./education.js"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react"
 
@@ -32,6 +33,7 @@ export default function Home() {
           <Projects />
           <Skills />
           <WorkExp />
+          <Education />
           <Contact />
         </div>
       </div>

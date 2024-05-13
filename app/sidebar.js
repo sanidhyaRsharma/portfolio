@@ -1,4 +1,4 @@
-import { FaArrowLeft, FaDiscord, FaGithub, FaHammer, FaLinkedinIn } from 'react-icons/fa';
+import { FaArrowLeft, FaDiscord, FaGithub, FaGraduationCap, FaHammer, FaLinkedinIn } from 'react-icons/fa';
 import { SiGmail } from "react-icons/si";
 import { FcHome, FcFolder, FcContacts, FcBriefcase} from 'react-icons/fc'
 import SideBarProfile from './sideprofile.js'
@@ -19,7 +19,9 @@ export default function SideBar({handleClick, isOpen}){
             <Link href="#project"><SideBarItem item = {<FcFolder size="28"/>} itemName = "Projects"/></Link>
             <Link href="#skills"><SideBarItem item= {<FaHammer size="28" />} itemName = "Skills" /></Link>
             <Link href="#workexp"><SideBarItem item = {<FcBriefcase size="28" />} itemName= "Work Experience" /></Link>
+            <Link href="#education"><SideBarItem item = {<FaGraduationCap size="28" />} itemName="Education"/></Link>
             <Link href="#contacts"> <SideBarItem item = {<FcContacts size="28"/>} itemName = "Contact"/></Link>
+            
         </div>
         // </div>
     );
