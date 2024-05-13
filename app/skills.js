@@ -1,19 +1,28 @@
+import { FaAndroid, FaJava, FaPython, FaReact, FaGitAlt, FaJenkins } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { PiFileSql } from "react-icons/pi";
+import { SiApachespark } from "react-icons/si";
+
+
 export default function Skills() {
   const skills = [
-    { id:0, name: "Java", value: 98 },
-    { id:1, name: "Spring Boot", value: 95 },
-    { id:2, name: "Python", value: 90 },
-    { id:3, name: "Android", value: 85 },
-    { id:4, name: "SQL", value: 95 },
-    { id:5, name: "React", value: 75 },
-    { id:6, name: "Git", value: 95 },
-    { id:7, name: "CI/CD", value: 85 },
-    { id:8, name: "Apache Spark", value: 80}
+    { id:0, icon: <FaJava/> ,name: "Java", value: 98 },
+    { id:1, icon: <BiLogoSpringBoot />, name: "Spring Boot", value: 95 },
+    { id:2, icon: <FaPython />, name: "Python", value: 90 },
+    { id:3, icon: <FaAndroid />, name: "Android", value: 85 },
+    { id:4, icon: <PiFileSql />, name: "SQL", value: 95 },
+    { id:5, icon: <FaReact />, name: "React", value: 75 },
+    { id:6, icon: <FaGitAlt />, name: "Git", value: 95 },
+    { id:7, icon: <FaJenkins/>, name: "CI/CD", value: 85 },
+    { id:8, icon: <SiApachespark/>,name: "Apache Spark", value: 80}
   ];
   const listItems = skills.map((item) => (
     <li key={item.id} className="w-full lg:w-1/3 p-5">
       <div className="relative">
-        <div className="py-2">{item.name}</div>
+        <div className="py-2 flex flex-row">
+          <div className="m-1">{item.icon}</div>
+          {item.name}
+        </div>
         <div className="absolute top-2 right-0">{item.value}%</div>
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-900">

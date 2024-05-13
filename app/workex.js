@@ -1,12 +1,13 @@
 "use client";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
-
+import Image from "next/image";
 export default function WorkExp() {
   const workexList = [
     {
       id: 1,
+      src: "/portfolio/img/assets/logo/pfw.jpg",
       title: "Graduate Research Assistant",
-      company: "Purdue Fort Wayne",
+      company: "Purdue University",
       location: "Fort Wayne, Indiana",
       duration: "July 2023 - Present",
       description: [
@@ -16,6 +17,7 @@ export default function WorkExp() {
     },
     {
       id: 2,
+      src: "/portfolio/img/assets/logo/dblogo.png",
       title: "Senior Analyst",
       company: "Deutsche Bank",
       location: "Pune, Maharashtra, India",
@@ -31,6 +33,7 @@ export default function WorkExp() {
     },
     {
       id: 3,
+      src: "/portfolio/img/assets/logo/barclays.png",
       title: "Analyst Intern",
       company: "Barclays",
       location: "Pune, Maharashtra, India",
@@ -50,15 +53,27 @@ export default function WorkExp() {
       style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
-        <div className="w-full lg:flex lg:justify-between">
+        <div className="w-full lg:flex lg:justify-between items-center">
+          
           <div className="my-2 text-2xl px-4">{item.title}</div>
-          <div className="my-2 md:text-2xl px-4">{item.duration}</div>
+          <div>
+            
+          </div>
         </div>
       }
-      indicator={<></>}
+      indicator={<Image
+        src={item.src}
+        className = "rounded-2xl mx-2"
+        width={100}
+        height={100}
+        unoptimized
+      />}
     >
-      <div className="px-8">
-        <div className="text-xl ">{item.company}</div>
+      <div className="px-4">
+        <div className="flex justify-between">
+          <div className="my-2 md:text-2xl">{item.duration}</div>
+          <div className="md:text-2xl ">{item.company}</div>
+        </div>
         <div className="italic ">{item.location}</div>
         <ul className="my-2 list-disc">
           {item.description.map((d, index) => (
@@ -78,7 +93,7 @@ export default function WorkExp() {
     >
       <div className="text-4xl text-white p-4"> Experience </div>
       <hr />
-     <br />
+      <br />
       <Accordion
         selectionMode="multiple"
         className="p-0 m-0"
