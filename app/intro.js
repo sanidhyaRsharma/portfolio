@@ -1,12 +1,38 @@
+import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
+
+
 export default function Intro() {
   return (
     <div id="home" className="text-center flex-grow">
-      <h1 className="text-7xl mx-4 my-10"> Sanidhya Sharma </h1>
+      <div className="min-h-screen justify-center items-center flex flex-col">
+        <div className="flex justify-center my-4">
+            <Image
+            src = "/portfolio/img/assets/main_profile.JPG"
+            className = "rounded-full border-[12px] border-gray-500"
+            width = {300}
+            height = {300}
+            alt = "Profile picture"
+            unoptimized
+            ></Image>
+        </div>
+        <h1 className="text-8xl mx-4 my-10"> Sanidhya Sharma </h1>
+          <TypeAnimation 
+          sequence={[
+            'Hi! I am a Backend Developer!',
+            1000,
+            'Hi! I am a Research Enthusiast!',
+            1000
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{fontSize: '2em'}}
+          repeat={Infinity}
+          />
+      </div>
       <hr />
       <div className="shadow-md shadow-gray-500 p-8 m-4  bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl ">
-        <h1 className="text-xl m-4">
-          Hi! I am a <strong>Backend Developer</strong> and a <strong>Research Enthusiast</strong>.
-          </h1>
+        
         <h1 className="text-md m-4"> 
           I am actively looking for Full Time Opportunities. I am adept at Java Spring Boot and Deep
           Learning and I am an inquisitive and quick learner. I have worked for
