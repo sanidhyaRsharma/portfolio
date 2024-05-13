@@ -16,7 +16,7 @@ export default function Education() {
         },
         {
             id: 2,
-            src: "/portfolio/img/assets/logo/vjti.png",
+            src: "/portfolio/img/assets/logo/vjti.jpeg",
             title: "B. Tech. in Information Technology",
             school: "Veermata Jijabai Technological Institute",
             location: "Mumbai, Maharashtra, India",
