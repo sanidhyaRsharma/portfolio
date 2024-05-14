@@ -54,27 +54,28 @@ export default function WorkExp() {
       style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
-        <div className="w-full lg:flex lg:justify-between items-center">
-          
-          <div className="my-2 text-2xl px-4 flex">{item.title} 
-          <div className="px-2 my-1"> 
-            <FaAngleDown/>
-
+        <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
+          <div className="my-2 text-2xl px-4 flex flex-grow">
+            {item.title}
+            <div className="px-2 my-1">
+              <FaAngleDown />
+            </div>
           </div>
+          <div className="my-2 px-4 ">
+            <Image
+              src={item.src}
+              className="rounded-2xl mx-2"
+              width={100}
+              height={100}
+              unoptimized
+            />
           </div>
-          
         </div>
       }
-      indicator={<Image
-        src={item.src}
-        className = "rounded-2xl mx-2"
-        width={100}
-        height={100}
-        unoptimized
-      />}
+      indicator={<></>}
     >
       <div className="px-4">
-        <div className="flex justify-between">
+        <div className="md:flex md:justify-between">
           <div className="my-2 md:text-2xl">{item.duration}</div>
           <div className="my-2 md:text-2xl ">{item.company}</div>
         </div>
