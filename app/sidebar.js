@@ -9,7 +9,7 @@ export default function SideBar({handleClick, isOpen}){
     const leftPosition = isOpen? "left-0": "left-[-300px]";
     return (
         
-        <div id='intro' className={"z-20 fixed top-0 h-screen p-4 w-[300px] flex flex-col bg-slate-800 text-white shadow-lg transition-all duration-600 ease-in-out " + leftPosition} >
+        <div id='intro' className={"z-20 fixed top-0 h-full p-4 w-[300px] flex flex-col bg-slate-800 text-white shadow-lg transition-all duration-600 ease-in-out " + leftPosition} >
             <button onClick={handleClick}><FaArrowLeft size={36} /></button>
             <SideBarProfile />
             <div>
