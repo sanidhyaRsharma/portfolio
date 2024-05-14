@@ -6,24 +6,26 @@ import { SiApachespark } from "react-icons/si";
 
 export default function Skills() {
   const skills = [
-    { id:0, icon: <FaJava/> ,name: "Java", value: 98 },
-    { id:1, icon: <BiLogoSpringBoot />, name: "Spring Boot", value: 95 },
-    { id:2, icon: <FaPython />, name: "Python", value: 90 },
-    { id:3, icon: <FaAndroid />, name: "Android", value: 85 },
-    { id:4, icon: <PiFileSql />, name: "SQL", value: 95 },
-    { id:5, icon: <FaReact />, name: "React", value: 75 },
-    { id:6, icon: <FaGitAlt />, name: "Git", value: 95 },
-    { id:7, icon: <FaJenkins/>, name: "CI/CD", value: 85 },
-    { id:8, icon: <SiApachespark/>,name: "Apache Spark", value: 80}
+    { id:0, icon: <FaJava size={32}/> ,name: "Java", value: 98 },
+    { id:1, icon: <BiLogoSpringBoot size={32}/>, name: "Spring Boot", value: 95 },
+    { id:2, icon: <FaPython size={32}/>, name: "Python", value: 90 },
+    { id:3, icon: <FaAndroid size={32}/>, name: "Android", value: 85 },
+    { id:4, icon: <PiFileSql size={32}/>, name: "SQL", value: 95 },
+    { id:5, icon: <FaReact size={32}/>, name: "React", value: 75 },
+    { id:6, icon: <FaGitAlt size={32}/>, name: "Git", value: 95 },
+    { id:7, icon: <FaJenkins size={32}/>, name: "CI/CD", value: 85 },
+    { id:8, icon: <SiApachespark size={32}/>,name: "Apache Spark", value: 80}
   ];
   const listItems = skills.map((item) => (
     <li key={item.id} className="w-full lg:w-1/3 p-5">
       <div className="relative">
-        <div className="py-2 flex flex-row">
+        <div className="py-2 flex items-center">
           <div className="m-1">{item.icon}</div>
+          <div className="m-1">
           {item.name}
+          </div>
         </div>
-        <div className="absolute top-2 right-0">{item.value}%</div>
+        <div className="absolute top-5 right-0">{item.value}%</div>
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-900">
         <div
