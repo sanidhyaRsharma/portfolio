@@ -37,10 +37,10 @@ const SideBarItem = ({ item, itemName }) => (
 
 const SideBarContacts = () => (
     <div className='flex bg-gray-600 rounded-2xl justify-evenly'>
-        <div className='rounded-full m-2 p-2'><Link href="https://www.github.com/sanidhyaRsharma"><FaGithub size={28}/></Link></div>
-        <div className='rounded-full m-2 p-2'><Link href="https://www.linkedin.com/in/sanidhyarsharma"><FaLinkedinIn size={28}/></Link></div>
-        <div className='rounded-full m-2 p-2'><Link href="mailto:sanidhyarsharma@gmail.com"><SiGmail size={28}/></Link></div>
-        <div className='rounded-full m-2 p-2'><Link href="https://discordapp.com/users/whitewalker98/"><FaDiscord size={28}/></Link></div>
+        <div className='rounded-full m-2 p-2 hover:bg-gray-900'><Link href="https://www.github.com/sanidhyaRsharma"><FaGithub size={28}/></Link></div>
+        <div className='rounded-full m-2 p-2 hover:bg-gray-900'><Link href="https://www.linkedin.com/in/sanidhyarsharma"><FaLinkedinIn size={28}/></Link></div>
+        <div className='rounded-full m-2 p-2 hover:bg-gray-900'><Link href="mailto:sanidhyarsharma@gmail.com"><SiGmail size={28}/></Link></div>
+        <div className='rounded-full m-2 p-2 hover:bg-gray-900'><Link href="https://discordapp.com/users/whitewalker98/"><FaDiscord size={28}/></Link></div>
 
 
     </div>
