@@ -59,7 +59,7 @@ export default function Education() {
       ));
   return (
     <div
-      id="workexp"
+      id="education"
       className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl"
     >
       <div className="text-4xl text-white p-4"> Education </div>
