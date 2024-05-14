@@ -1,5 +1,6 @@
 "use client";
 import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import { FaAngleDown } from "react-icons/fa";
 import Image from "next/image";
 export default function WorkExp() {
   const workexList = [
@@ -55,10 +56,13 @@ export default function WorkExp() {
       title={
         <div className="w-full lg:flex lg:justify-between items-center">
           
-          <div className="my-2 text-2xl px-4">{item.title}</div>
-          <div>
-            
+          <div className="my-2 text-2xl px-4 flex">{item.title} 
+          <div className="px-2 my-1"> 
+            <FaAngleDown/>
+
           </div>
+          </div>
+          
         </div>
       }
       indicator={<Image
