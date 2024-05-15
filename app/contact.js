@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { TfiLocationPin } from "react-icons/tfi";
 import { MdMail } from "react-icons/md";
 export default function Contact() {
@@ -17,9 +17,12 @@ export default function Contact() {
         <div className="flex flex-col p-4">
           <div className="text-xl">Email: </div>
           <div>
-            <a className="flex-grow" href="mailto:sanidhyrsharma@gmail.com">
+            <u>
+            <a className="flex-grow" href="mailto:sanidhyrsharma@gmail.com" target="_blank" rel="noopener noreferrer">
               sanidhyarsharma@gmail.com
+              <FaExternalLinkAlt className="inline mx-2"/>
             </a>
+            </u>
           </div>
         </div>
       </div>
@@ -28,9 +31,12 @@ export default function Contact() {
         <div className="flex flex-col p-4">
           <div className="text-xl">Github: </div>
           <div>
-            <a className="flex-grow" href="github.com/sanidhyaRsharma">
+            <u>
+            <a className="flex-grow" href="https://www.github.com/sanidhyaRsharma" target="_blank">
               github.com/sanidhyaRsharma
+              <FaExternalLinkAlt className="inline mx-2"/>
             </a>
+            </u>
           </div>
         </div>
       </div>
