@@ -87,8 +87,8 @@ export default function Education() {
         <div className="">
             {/* <p className="text-xl ">Relevant coursework: </p>  */}
                 <div className="flex flex-wrap">
-                {item.courses.map((e) => (
-                    <div className="p-1 border mx-2 my-2 rounded-md bg-cyan-900">{e}</div>
+                {item.courses.map((e, i) => (
+                    <div key = {i} className="p-1 border mx-2 my-2 rounded-md bg-cyan-900">{e}</div>
                 ))}
                 </div>
                 

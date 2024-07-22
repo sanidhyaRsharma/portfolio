@@ -112,8 +112,8 @@ export default function WorkExp() {
             </div>
           </div>
           <div className="w-full flex flex-wrap">
-            {item.skills.map((e) => (
-              <div className="px-4 border mx-1 my-1 rounded-md bg-cyan-900 ">
+            {item.skills.map((e, i) => (
+              <div key = {i} className="px-4 border mx-1 my-1 rounded-md bg-cyan-900 ">
                 {e}
               </div>
             ))}
