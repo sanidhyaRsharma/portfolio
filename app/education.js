@@ -13,6 +13,16 @@ export default function Education() {
       school: "Purdue University",
       location: "Fort Wayne, Indiana",
       duration: "Aug 2024",
+      courses: [
+        "Thesis: Adversarial Attacks Against Network Intrusion Detection Systems",
+        "Natural Language Processing",
+        "Applications of Deep Learning",
+        "Cryptography & Network Security",
+        "Algorithm Analysis and Design",
+        "Heuristics",
+        "Software Engineering",
+        "Database Design",
+      ],
     },
     {
       id: 2,
@@ -21,6 +31,20 @@ export default function Education() {
       school: "Veermata Jijabai Technological Institute",
       location: "Mumbai, Maharashtra, India",
       duration: "June 2020",
+      courses: [
+        "Software Analysis and Design",
+        "Blockchain Technology",
+        "Web Technology",
+        "Program Development : Java",
+        "Fundamentals of Data Structures",
+        "Computer Programming & Problem Solving : C++",
+        "Computer Organization & Architecture",
+        "Operating Systems : C",
+        "Computer Networks",
+        "Wireless Networks",
+        "Service Oriented Architecture",
+        "Big Data Analytics",
+      ],
     },
   ];
   const listItems = educationList.map((item) => (
@@ -57,7 +81,17 @@ export default function Education() {
           <div className="my-2 md:text-2xl">{item.duration}</div>
           <div className="my-2 md:text-2xl ">{item.school}</div>
         </div>
-        <div className="italic ">{item.location}</div>
+        <div className="italic my-2">{item.location}</div>
+        <div className="">
+            {/* <p className="text-xl ">Relevant coursework: </p>  */}
+                <div className="flex flex-wrap">
+                {item.courses.map((e) => (
+                    <div className="p-1 border mx-2 my-2 rounded-md bg-cyan-900">{e}</div>
+                ))}
+                </div>
+                
+        
+        </div>
       </div>
     </AccordionItem>
   ));

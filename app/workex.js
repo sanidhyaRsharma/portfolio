@@ -15,6 +15,14 @@ export default function WorkExp() {
         "Researching adversarial attacks on machine learning & deep learning Network Intrusion Detection Systems.",
         "Implemented Projected Gradient Descent and BPDA to detect weaknesses in modern Intrusion Detection Systems.",
       ],
+      skills: [
+        "Python",
+        "TensorFlow",
+        "Deep Learning",
+        "Machine Learning",
+        "Jupyter Lab",
+        "Git",
+      ],
     },
     {
       id: 2,
@@ -31,6 +39,23 @@ export default function WorkExp() {
         "Created a Jenkins pipeline and automated deployments for services to migrate them from TeamCity builds.",
         "Pioneered a new business analysis process to use Python(pandas) over Excel to communicate transformation logic.",
       ],
+      skills: [
+        "Java",
+        "Spring Boot",
+        "SQL",
+        "Spark",
+        "HDFS",
+        "Hive",
+        "Linux",
+        "Jenkins",
+        "TeamCity",
+        "SonarQube",
+        "CI/CD",
+        "Bitbucket",
+        "JIRA",
+        "SCRUM",
+        "Agile",
+      ],
     },
     {
       id: 3,
@@ -43,6 +68,16 @@ export default function WorkExp() {
         "Automated process to extract business critical information from PDFs with OCR reducing human effort by 80%.",
         "Achieved 97% accuracy by using Google’s Tesseract, beating the previous benchmark of 56%.",
       ],
+      skills: [
+        "Python",
+        "Flask",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "BootStrap",
+        "OCR",
+        "Google Tesseract",
+      ],
     },
   ];
 
@@ -54,21 +89,33 @@ export default function WorkExp() {
       style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
-        <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
-          <div className="my-2 text-2xl px-4 flex flex-grow">
-            {item.title}
-            <div className="px-2 my-1">
-              <FaAngleDown />
+        <div>
+          <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
+            <div className="flex flex-grow">
+              <div>
+                <div className="text-3xl px-4">{item.title}</div>
+              </div>
+
+              <div className="px-2 my-1">
+                <FaAngleDown />
+              </div>
+            </div>
+            <div className="my-2 px-4 ">
+              <Image
+                src={item.src}
+                className="rounded-2xl mx-2"
+                width={100}
+                height={100}
+                unoptimized
+              />
             </div>
           </div>
-          <div className="my-2 px-4 ">
-            <Image
-              src={item.src}
-              className="rounded-2xl mx-2"
-              width={100}
-              height={100}
-              unoptimized
-            />
+          <div className="w-2/3 flex flex-wrap">
+            {item.skills.map((e) => (
+              <div className="p-0.5 border mx-1 my-1 rounded-md bg-cyan-900 ">
+                {e}
+              </div>
+            ))}
           </div>
         </div>
       }
