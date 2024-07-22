@@ -106,13 +106,14 @@ export default function WorkExp() {
                 className="rounded-2xl mx-2"
                 width={100}
                 height={100}
+                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
                 unoptimized
               />
             </div>
           </div>
-          <div className="w-2/3 flex flex-wrap">
+          <div className="w-full flex flex-wrap">
             {item.skills.map((e) => (
-              <div className="p-0.5 border mx-1 my-1 rounded-md bg-cyan-900 ">
+              <div className="px-4 border mx-1 my-1 rounded-md bg-cyan-900 ">
                 {e}
               </div>
             ))}

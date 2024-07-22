@@ -69,7 +69,9 @@ export default function Education() {
                 className="rounded-2xl mx-2"
                 width={100}
                 height={100}
+                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
                 unoptimized
+
               />
             </div>
         </div>
