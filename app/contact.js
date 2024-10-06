@@ -44,7 +44,7 @@ export default function Contact() {
         <TfiLocationPin size={48} className="inline mx-2" />
         <div className="flex flex-col p-4">
           <div className="text-xl">Location: </div>
-          <div className="flex-grow">Fort Wayne, Indiana</div>
+          <div className="flex-grow">United States</div>
         </div>
       </div>
     </div>
