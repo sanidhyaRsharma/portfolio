@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function Projects() {
-  const rootPath = "/portfolio/img/assets";
+  const rootPath = "/img/assets";
   const projectItems = [
     {
       id: 0,
@@ -23,13 +23,26 @@ export default function Projects() {
     {
       id: 1,
       title: "WhatsApp Clone",
-      link: "",
-      desc: "A clone of WhatsApp with Next.js, Convex, Clerk, React.js, TypeScript, TailwindCSS, ZegoClooud",
+      link: "https://github.com/sanidhyaRsharma/whatsapp-clone",
+      desc: "A clone of WhatsApp with Next.js, Convex, Clerk, React.js, TypeScript, TailwindCSS",
       imgs: [
         rootPath + "/whatsapp-clone/image1.png",
         rootPath + "/whatsapp-clone/image2.png",
         rootPath + "/whatsapp-clone/image3.png",
       ],
+    },
+    {
+      id: 2,
+      title: "Car Rental App",
+      link: "https://github.com/sanidhyaRsharma/carrental",
+      desc: "A car rental web application built using React.js, Django and SQLite",
+      imgs: [
+        rootPath + "/carrental/login.png",
+        rootPath + "/carrental/home.png",
+        rootPath + "/carrental/datepicker.png",
+        rootPath + "/carrental/timepicker.png",
+        rootPath + "/carrental/carselector.png",
+      ]
     },
     {
       id: 2,
