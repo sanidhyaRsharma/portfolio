@@ -85,7 +85,7 @@ export default function WorkExp() {
     },
     {
       id: 4,
-      src: "/portfolio/img/assets/logo/cybertech.jpeg",
+      src: "/portfolio/img/assets/logo/cybertech.jpg",
       title: "Software Developer Intern",
       company: "CyberTech Systems & Software",
       location: "Thane, Maharashtra, India",
