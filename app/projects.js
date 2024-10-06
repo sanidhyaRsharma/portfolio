@@ -18,7 +18,6 @@ export default function Projects() {
         rootPath + "/pfw-chatbot/chat1.png",
         rootPath + "/pfw-chatbot/chat2.png",
         rootPath + "/pfw-chatbot/chat3.png",
-
       ],
     },
     {
