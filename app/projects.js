@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function Projects() {
   const rootPath = "/portfolio/img/assets";
