@@ -4,7 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export default function Projects() {
-  const rootPath = "/img/assets";
+  const rootPath = "/portfolio/img/assets";
   const projectItems = [
     {
       id: 0,
