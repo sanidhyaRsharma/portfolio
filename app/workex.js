@@ -27,7 +27,7 @@ export default function WorkExp() {
     {
       id: 2,
       src: "/portfolio/img/assets/logo/dblogo.png",
-      title: "Senior Analyst",
+      title: "Senior Software Engineer",
       company: "Deutsche Bank",
       location: "Pune, Maharashtra, India",
       duration: "August 2020 - June 2022",
@@ -47,14 +47,18 @@ export default function WorkExp() {
         "HDFS",
         "Hive",
         "Linux",
+        "JUnit",
+        "Mockito",
         "Jenkins",
         "TeamCity",
         "SonarQube",
+        "Veracode",
         "CI/CD",
         "Bitbucket",
         "JIRA",
         "SCRUM",
         "Agile",
+
       ],
     },
     {
@@ -77,6 +81,27 @@ export default function WorkExp() {
         "BootStrap",
         "OCR",
         "Google Tesseract",
+      ],
+    },
+    {
+      id: 4,
+      src: "/portfolio/img/assets/logo/cybertech.jpeg",
+      title: "Software Developer Intern",
+      company: "CyberTech Systems & Software",
+      location: "Thane, Maharashtra, India",
+      duration: "May 2018 - July 2018",
+      description: [
+        "Enhanced performance of the H.R. portal by redesigning views with pagination and lazy loading leading to significantly smaller response time",
+        "Improved the UI and added backend functionality for the Skill Assessment Web Application.",
+      ],
+      skills: [
+        "ASP .NET 4.0",
+        "C#",
+        "Angular",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "BootStrap",
       ],
     },
   ];
@@ -142,8 +167,7 @@ export default function WorkExp() {
   return (
     <div
       id="workexp"
-      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl"
-    >
+      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl">
       <div className="text-4xl text-white p-4"> Experience </div>
       <hr />
       <br />
