@@ -3,13 +3,16 @@ import { SiGmail } from "react-icons/si";
 import { FcHome, FcFolder, FcContacts, FcBriefcase} from 'react-icons/fc'
 import SideBarProfile from './sideprofile.js'
 import Link from 'next/link'
+import { forwardRef } from 'react';
+import { defaultConfig } from 'next/dist/server/config-shared.js';
 
-export default function SideBar({handleClick, isOpen}){
-    console.log(isOpen)
+function SideBarNav({handleClick, isOpen}, ref){
+
     const leftPosition = isOpen? "left-0": "left-[-300px]";
     return (
         
-        <div id='intro' className={"z-20 fixed top-0 h-full p-4 w-[300px] flex flex-col bg-slate-800 text-white shadow-lg transition-all duration-600 ease-in-out " + leftPosition} >
+        <div id='intro' ref={ref}
+        className={"z-20 fixed top-0 h-full p-4 w-[300px] flex flex-col bg-slate-800 text-white shadow-lg transition-all duration-600 ease-in-out " + leftPosition} >
             <button onClick={handleClick}><FaArrowLeft size={36} /></button>
             <SideBarProfile />
             <div>
@@ -45,3 +48,7 @@ const SideBarContacts = () => (
 
     </div>
 )
+
+
+const SideBar = forwardRef(SideBarNav);
+export default SideBar;

@@ -45,7 +45,7 @@ export default function Projects() {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Enthusia App",
       link: "https://github.com/sanidhyaRsharma/Enthusia-2017-Android-App",
       desc: "Developed live scoring, fixtures, and points for all sports in the Android application",
@@ -61,7 +61,7 @@ export default function Projects() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Pothole Challenge",
       link: "https://github.com/sanidhyaRsharma/SIH2020submission",
       desc: "A solution to locate potholes via AR gamification on Android for a municipal government.",
@@ -72,7 +72,7 @@ export default function Projects() {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "CPUStats",
       link: "https://github.com/sanidhyaRsharma/CPUStats",
       desc: "A simple Android application to display CPU stats onto the screen as an overlay.",
