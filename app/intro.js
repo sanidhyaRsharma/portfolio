@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Intro() {
   return (
-    <div id="home" className="text-center flex-grow">
-      <div className="min-h-screen justify-center items-center flex flex-col">
+    <div id="home" className="text-center">
+      <div className="min-h-screen justify-center items-center ">
         <div className="flex justify-center my-4">
             <Image
             src = "/portfolio/img/assets/main_profile.JPG"
@@ -16,7 +16,7 @@ export default function Intro() {
             unoptimized
             ></Image>
         </div>
-        <h1 className="text-8xl mx-4 my-10"> Sanidhya Sharma </h1>
+        <h1 className="text-6xl md:text-8xl mx-4 my-10"> Sanidhya Sharma </h1>
           <TypeAnimation 
           sequence={[
             'Hi! I am a Backend Developer!',
