@@ -52,32 +52,27 @@ export default function Education() {
     <AccordionItem
       key={item.id}
       className="m-2 bg-gray-900 rounded-2xl p-4"
-      style={{ "&focus": { outline: "0" } }}
+      // style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
-        <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
-          <div className="my-2 text-2xl px-4 flex flex-grow">
-            {item.title}
-            <div className="px-2 my-1">
-              <FaAngleDown />
+        <div className="flex-col-reverse md:flex-row md:justify-between items-center">
+          <div className="my-2 text-2xl px-4 flex w-full justify-between">
+            <div className="flex flex-row">
+              {item.title} <FaAngleDown /></div>
+            <div>
+              <Image
+                src={item.src}
+                className="rounded-2xl mx-2"
+                width={100}
+                height={100}
+                alt={item.src.substring(item.src.lastIndexOf("/") + 1)}
+                unoptimized
+              />
             </div>
           </div>
         </div>
       }
-      indicator={
-        <>
-          <div className="my-2 px-4 ">
-            <Image
-              src={item.src}
-              className="rounded-2xl mx-2"
-              width={100}
-              height={100}
-              alt={item.src.substring(item.src.lastIndexOf("/") + 1)}
-              unoptimized
-            />
-          </div>
-        </>
-      }
+      // indicator={<></>}
     >
       <div className="px-4">
         <div className="md:flex md:justify-between align-middle">
@@ -104,7 +99,7 @@ export default function Education() {
   return (
     <div
       id="education"
-      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl"
+      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 rounded-3xl"
     >
       <div className="text-4xl text-white p-4"> Education </div>
       <hr />

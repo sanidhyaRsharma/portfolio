@@ -172,7 +172,6 @@ export default function WorkExp() {
       <hr />
       <Accordion
         selectionMode="multiple"
-        className="p-0 m-0"
         variant="splitted"
       >
         {listItems}

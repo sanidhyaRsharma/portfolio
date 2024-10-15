@@ -36,22 +36,25 @@ export default function Home() {
   };
   
   return (
-    <main className="flex flex-col bg-fixed" style={bgStyle} >
-      {isOpen  && <div className="w-0 md:w-72 md:p-4 "></div>}
-        <SideBar handleClick={handleClick} isOpen={isOpen} ref={sidebarRef}/>
-
-        <div className="fixed flex top-0 left-0 p-3 m-4 rounded-full bg-slate-400 bg-opacity-60 w-16 h-16 justify-center align-middle">
+    <main className="flex flex-row bg-fixed" style={bgStyle} >
+      <div className="fixed flex top-0 left-0 p-3 m-4 rounded-full bg-slate-400 bg-opacity-60 w-16 h-16 justify-center align-middle">
           <button onClick={handleClick}><GiHamburgerMenu size={36} /></button>
         </div>
+      <div className="flex flex-row">
+        <SideBar handleClick={handleClick} isOpen={isOpen} ref={sidebarRef}/>
+        {isOpen  && <div className="flex md:flex-shrink-0 w-0 md:w-[300px] md:p-4 "></div> }
 
-        {/* <div className="flex min-h-full"> */}
-        <Intro/>  
-        {/* </div> */}
-        <Projects />
-        <Skills />
-        <WorkExp />
-        <Education />
-        <Contact />
+      
+        <div className="">
+          <Intro/>  
+          <Projects />
+          <Skills />
+          <WorkExp />
+          <Education />
+          <Contact />
+        </div>
+
+      </div>
     </main>
   );
 }
