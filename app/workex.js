@@ -111,10 +111,10 @@ export default function WorkExp() {
     <AccordionItem
       key={item.id}
       className="m-2 bg-gray-900 rounded-2xl p-4"
-      style={{ "&focus": { outline: "0" } }}
+      // style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
-        <div>
+        <div className="px-4">
           <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
             <div className="flex flex-grow">
               <div>
@@ -125,18 +125,8 @@ export default function WorkExp() {
                 <FaAngleDown />
               </div>
             </div>
-            <div className="my-2 px-4 ">
-              <Image
-                src={item.src}
-                className="rounded-2xl mx-2"
-                width={100}
-                height={100}
-                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
-                unoptimized
-              />
-            </div>
           </div>
-          <div className="w-4/5 px-4 flex flex-wrap">
+          <div className="px-4 flex flex-wrap">
             {item.skills.map((e, i) => (
               <div key = {i} className="px-4 border mx-1 my-1 rounded-md bg-cyan-900 ">
                 {e}
@@ -145,7 +135,17 @@ export default function WorkExp() {
           </div>
         </div>
       }
-      indicator={<></>}
+      indicator={<>
+      <div className="my-2 px-4 ">
+              <Image
+                src={item.src}
+                className="rounded-2xl mx-2"
+                width={100}
+                height={100}
+                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
+                unoptimized
+              />
+            </div></>}
     >
       <div className="px-4">
         <div className="md:flex md:justify-between">
@@ -167,10 +167,9 @@ export default function WorkExp() {
   return (
     <div
       id="workexp"
-      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl">
+      className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 rounded-3xl">
       <div className="text-4xl text-white p-4"> Experience </div>
       <hr />
-      <br />
       <Accordion
         selectionMode="multiple"
         className="p-0 m-0"

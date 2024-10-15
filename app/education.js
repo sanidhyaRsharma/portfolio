@@ -61,22 +61,23 @@ export default function Education() {
             <div className="px-2 my-1">
               <FaAngleDown />
             </div>
-            
           </div>
-          <div className="my-2 px-4 ">
-              <Image
-                src={item.src}
-                className="rounded-2xl mx-2"
-                width={100}
-                height={100}
-                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
-                unoptimized
-
-              />
-            </div>
         </div>
       }
-      indicator={<></>}
+      indicator={
+        <>
+          <div className="my-2 px-4 ">
+            <Image
+              src={item.src}
+              className="rounded-2xl mx-2"
+              width={100}
+              height={100}
+              alt={item.src.substring(item.src.lastIndexOf("/") + 1)}
+              unoptimized
+            />
+          </div>
+        </>
+      }
     >
       <div className="px-4">
         <div className="md:flex md:justify-between align-middle">
@@ -85,14 +86,17 @@ export default function Education() {
         </div>
         <div className="italic my-2">{item.location}</div>
         <div className="">
-            {/* <p className="text-xl ">Relevant coursework: </p>  */}
-                <div className="flex flex-wrap">
-                {item.courses.map((e, i) => (
-                    <div key = {i} className="p-1 border mx-2 my-2 rounded-md bg-cyan-900">{e}</div>
-                ))}
-                </div>
-                
-        
+          {/* <p className="text-xl ">Relevant coursework: </p>  */}
+          <div className="flex flex-wrap">
+            {item.courses.map((e, i) => (
+              <div
+                key={i}
+                className="p-1 border mx-2 my-2 rounded-md bg-cyan-900"
+              >
+                {e}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </AccordionItem>
@@ -103,6 +107,7 @@ export default function Education() {
       className="shadow-md shadow-gray-500 p-8 m-4 bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl"
     >
       <div className="text-4xl text-white p-4"> Education </div>
+      <hr />
       <Accordion
         selectionMode="multiple"
         className="p-0 m-0"
