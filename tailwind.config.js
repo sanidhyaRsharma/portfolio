@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.trueGray
+        primary: colors.neutral
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Intro() {
   return (
     <div id="home" className="text-center">
-      <div className="min-h-screen justify-center items-center ">
+      <div className="flex flex-col min-h-screen justify-center items-center">
         <div className="flex justify-center my-4">
             <Image
             src = "/portfolio/img/assets/main_profile.JPG"

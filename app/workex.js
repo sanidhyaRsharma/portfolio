@@ -69,8 +69,9 @@ export default function WorkExp() {
       location: "Pune, Maharashtra, India",
       duration: "May 2019 - August 2019",
       description: [
-        "Automated process to extract business critical information from PDFs with OCR reducing human effort by 80%.",
-        "Achieved 97% accuracy by using Google’s Tesseract, beating the previous benchmark of 56%.",
+        "Reduced human effort by 80% by automating the information extraction from PDF statements using OCR technology.",
+        "Enhanced data extraction accuracy from 56% to 97% by using Google’s Tesseract OCR to parse diverse document formats.",
+        "Developed a web application using Flask, HTML, CSS & Bootstrap to streamline the parsing process.",
       ],
       skills: [
         "Python",
@@ -110,20 +111,27 @@ export default function WorkExp() {
     // <li key={item.id} className="w-full group">
     <AccordionItem
       key={item.id}
-      className="m-2 bg-gray-900 rounded-2xl p-4"
+      className="m-2 bg-gray-900 rounded-2xl p-4 hover:bg-gray-800"
       // style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
       title={
         <div className="px-4">
           <div className="w-full flex-col-reverse flex md:flex-row md:justify-between items-center">
-            <div className="flex flex-grow">
+            <div className="flex flex-grow my-2">
               <div>
-                <div className="text-3xl px-4">{item.title}</div>
+                <div className="text-3xl px-4 my-2">{item.title}</div>
               </div>
 
-              <div className="px-2 my-1">
-                <FaAngleDown />
-              </div>
+            </div>
+            <div className="my-2 px-4 ">
+              <Image
+                src={item.src}
+                className="rounded-2xl mx-2"
+                width={100}
+                height={100}
+                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
+                unoptimized
+              />
             </div>
           </div>
           <div className="px-4 flex flex-wrap">
@@ -135,17 +143,7 @@ export default function WorkExp() {
           </div>
         </div>
       }
-      indicator={<>
-      <div className="my-2 px-4 ">
-              <Image
-                src={item.src}
-                className="rounded-2xl mx-2"
-                width={100}
-                height={100}
-                alt = {item.src.substring(item.src.lastIndexOf('/') + 1)}
-                unoptimized
-              />
-            </div></>}
+     indicator={<></>}
     >
       <div className="px-4">
         <div className="md:flex md:justify-between">

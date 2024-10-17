@@ -1,20 +1,20 @@
 import { FaAndroid, FaJava, FaPython, FaReact, FaGitAlt, FaJenkins } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { PiFileSql } from "react-icons/pi";
-import { SiApachespark } from "react-icons/si";
+import { SiApachespark, SiTypescript } from "react-icons/si";
 
 
 export default function Skills() {
   const skills = [
     { id:0, icon: <FaJava size={32}/> ,name: "Java", value: 98 },
     { id:1, icon: <BiLogoSpringBoot size={32}/>, name: "Spring Boot", value: 95 },
-    { id:2, icon: <FaPython size={32}/>, name: "Python", value: 90 },
-    { id:3, icon: <FaAndroid size={32}/>, name: "Android", value: 85 },
-    { id:4, icon: <PiFileSql size={32}/>, name: "SQL", value: 95 },
-    { id:5, icon: <FaReact size={32}/>, name: "React", value: 75 },
-    { id:6, icon: <FaGitAlt size={32}/>, name: "Git", value: 95 },
-    { id:7, icon: <FaJenkins size={32}/>, name: "CI/CD", value: 85 },
-    { id:8, icon: <SiApachespark size={32}/>,name: "Apache Spark", value: 80}
+    { id:2, icon: <FaPython size={32}/>, name: "Python", value: 95 },
+    { id:3, icon: <SiTypescript size={32}/>, name: "Typescript", value: 90 },
+    { id:4, icon: <FaReact size={32}/>, name: "React", value: 85 },
+    { id:5, icon: <PiFileSql size={32}/>, name: "SQL", value: 95 },
+    { id:6, icon: <SiApachespark size={32}/>,name: "Apache Spark", value: 85},
+    { id:7, icon: <FaGitAlt size={32}/>, name: "Git", value: 95 },
+    { id:8, icon: <FaJenkins size={32}/>, name: "CI/CD", value: 85 },
   ];
   const listItems = skills.map((item) => (
     <li key={item.id} className="w-full lg:w-1/3 p-5">

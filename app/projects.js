@@ -111,7 +111,9 @@ const ProjectImageList = ({ imgs }) => (
     <Carousel autoPlay={true} interval={3000} infiniteLoop showThumbs={false} >
     {imgs.map((img, i) => (
       <div key={i} className="max-h-96">
-        <Image src={img} width={100} height={100} className="leading-4 max-h-96 object-contain" unoptimized />
+        <Image src={img} width={100} height={100} 
+        className="leading-4 max-h-96 object-contain"                
+         unoptimized />
       </div>
     ))}
     </Carousel>

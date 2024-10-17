@@ -51,14 +51,18 @@ export default function Education() {
     // <li key={item.id} className="w-full group">
     <AccordionItem
       key={item.id}
-      className="m-2 bg-gray-900 rounded-2xl p-4"
+      className="m-2 bg-gray-900 rounded-2xl p-4 hover:bg-gray-800"
       // style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
+      
       title={
         <div className="flex-col-reverse md:flex-row md:justify-between items-center">
-          <div className="my-2 text-2xl px-4 flex w-full justify-between">
+          <div className="my-2 text-2xl px-4 flex w-full justify-between items-center">
             <div className="flex flex-row">
-              {item.title} <FaAngleDown /></div>
+              <div>
+                <div className="text-3xl px-4 my-2">{item.title}</div>
+              </div>
+            </div>
             <div>
               <Image
                 src={item.src}
@@ -72,7 +76,7 @@ export default function Education() {
           </div>
         </div>
       }
-      // indicator={<></>}
+      indicator={<></>}
     >
       <div className="px-4">
         <div className="md:flex md:justify-between align-middle">
@@ -107,6 +111,7 @@ export default function Education() {
         selectionMode="multiple"
         className="p-0 m-0"
         variant="splitted"
+        defaultExpandedKeys={["1", "2"]}
       >
         {listItems}
       </Accordion>
