@@ -45,7 +45,7 @@ export default function Home() {
         {isOpen  && <div className="flex md:flex-shrink-0 w-0 md:w-[300px] md:p-4 "></div> }
 
       
-        <div className="">
+        <div className="flex-1">
           <Intro/>  
           <Projects />
           <Skills />
