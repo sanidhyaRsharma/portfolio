@@ -19,9 +19,9 @@ export default function Intro() {
         <h1 className="text-6xl md:text-8xl mx-4 my-10"> Sanidhya Sharma </h1>
           <TypeAnimation 
           sequence={[
-            'Hi! I am a Backend Developer!',
+            'Fullstack Developer.',
             1000,
-            'Hi! I am a Research Enthusiast!',
+            'AI/ML Researcher.',
             1000
           ]}
           wrapper="span"

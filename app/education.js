@@ -54,25 +54,22 @@ export default function Education() {
       className="m-2 bg-gray-900 rounded-2xl p-4 hover:bg-gray-800"
       // style={{ "&focus": { outline: "0" } }}
       aria-label={item.title}
-      
       title={
-        <div className="flex-col-reverse md:flex-row md:justify-between items-center">
-          <div className="my-2 text-2xl px-4 flex w-full justify-between items-center">
+        <div className="flex flex-col-reverse md:flex-row md:justify-between items-center">
+          <div className="my-2 text-2xl px-4 flex justify-between items-center">
             <div className="flex flex-row">
-              <div>
-                <div className="text-3xl px-4 my-2">{item.title}</div>
-              </div>
+              <div className="text-3xl px-4 my-2">{item.title}</div>
             </div>
-            <div>
-              <Image
-                src={item.src}
-                className="rounded-2xl mx-2"
-                width={100}
-                height={100}
-                alt={item.src.substring(item.src.lastIndexOf("/") + 1)}
-                unoptimized
-              />
-            </div>
+          </div>
+          <div>
+            <Image
+              src={item.src}
+              className="rounded-2xl mx-2"
+              width={100}
+              height={100}
+              alt={item.src.substring(item.src.lastIndexOf("/") + 1)}
+              unoptimized
+            />
           </div>
         </div>
       }
@@ -86,7 +83,7 @@ export default function Education() {
         <div className="italic my-2">{item.location}</div>
         <div className="">
           {/* <p className="text-xl ">Relevant coursework: </p>  */}
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             {item.courses.map((e, i) => (
               <div
                 key={i}

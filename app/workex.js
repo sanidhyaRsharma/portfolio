@@ -134,7 +134,7 @@ export default function WorkExp() {
               />
             </div>
           </div>
-          <div className="px-4 flex flex-wrap">
+          <div className="px-4 flex flex-wrap justify-center">
             {item.skills.map((e, i) => (
               <div key = {i} className="px-4 border mx-1 my-1 rounded-md bg-cyan-900 ">
                 {e}
