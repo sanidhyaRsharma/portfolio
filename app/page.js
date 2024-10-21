@@ -46,10 +46,10 @@ export default function Home() {
 
       
         <div className="flex-1">
-          <Intro/>  
+          <Intro/> 
+          <WorkExp />
           <Projects />
           <Skills />
-          <WorkExp />
           <Education />
           <Contact />
         </div>

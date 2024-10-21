@@ -10,7 +10,9 @@ export default function Projects() {
       id: 0,
       title: "PFW Chatbot",
       link: "https://github.com/StaticOwl/PFW_ChatBot",
-      desc: "A chatbot with React and Flask for the CS Department using Retrieval Augmented Generation with Facebook AI Similarity Search (FAISS) and Google PaLM 2",
+      desc: "A chatbot with React and Flask for the CS Department using Retrieval Augmented Generation with Facebook AI Similarity Search (FAISS) and Google PaLM 2.\
+      Won a prize at the PFW Symposium 2024."
+      ,
       imgs: [
         rootPath + "/pfw-chatbot/login.png",
         rootPath + "/pfw-chatbot/register.png",
