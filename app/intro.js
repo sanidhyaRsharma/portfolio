@@ -34,9 +34,8 @@ export default function Intro() {
       <div className="shadow-md shadow-gray-500 p-8 m-4  bg-slate-600 bg-opacity-70 flex flex-col rounded-3xl ">
         
         <h1 className="text-lg m-4"> 
-          I am actively seeking Full Time Opportunities. I am adept at <strong>Java (Spring Boot)</strong> and <strong>Deep
-          Learning </strong> and I am an inquisitive and quick learner. I have worked for 2 years at Deutsche Bank as a Senior Software Engineer 
-          and I have completed an MS in Computer Science from Purdue Fort Wayne.
+          I am actively seeking Full Time Software Engineer Roles. I am adept at <strong>Java (Spring Boot)</strong> and <strong> Python </strong> and I am an inquisitive and quick learner. I have worked for 2 years at Deutsche Bank as a Senior Software Engineer 
+          and I have completed an MS in Computer Science from Purdue Fort Wayne. I also have experience building web applications using <strong>React</strong> and <strong>TypeScript</strong>.
         </h1>
 
         <h1 className="text-md m-4">
